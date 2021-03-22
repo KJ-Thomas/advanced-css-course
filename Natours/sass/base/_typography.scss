@@ -8,8 +8,9 @@ body {
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
+
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
@@ -18,9 +19,15 @@ body {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
+    
         animation-name: moveInLeft;
         animation-duration: 1s;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-out;
+    
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
     }
     
     &--sub {
@@ -28,9 +35,7 @@ body {
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1.75rem;
-        animation-name: moveInRight;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
+        animation: moveInRight 1s ease-out;
     }
 }
 
